@@ -1,3 +1,3 @@
 import Interface from './modules/Interface'
 
-document.addEventListener('DOMContentLoaded', Interface.loadInterface)
+document.addEventListener('DOMContentLoaded', Interface.loadInterface);
