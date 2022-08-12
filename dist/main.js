@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",class{constructor(){}loadInterface(){}}.loadInterface)})();

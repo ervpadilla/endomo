@@ -1,3 +1,3 @@
-import UI from './modules/UI'
+import Interface from './modules/Interface'
 
-document.addEventListener('DOMContentLoaded', UI.loadPage)
+document.addEventListener('DOMContentLoaded', Interface.loadInterface)
