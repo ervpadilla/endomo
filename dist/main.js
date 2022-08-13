@@ -1,1 +1,1 @@
-(()=>{"use strict";document.addEventListener("DOMContentLoaded",class{constructor(){}loadInterface(){}}.loadInterface)})();
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",class{constructor(){}loadInterface(){}}.loadInterface);const e=document.querySelector("#taskModal");document.querySelector("#newTask").addEventListener("click",(()=>{e.showModal()}))})();

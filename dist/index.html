@@ -38,19 +38,37 @@
                     <ul class="todos">
                         <li>
                             <input type="checkbox" name="todo">
-                            <label for="todo">Finish to do app</label>    
+                            <label for="todo">Finish to do app</label>
                         </li>
                         <li>
                             <input type="checkbox" name="todo">
-                            <label for="todo">Refactor code</label>    
+                            <label for="todo">Refactor code</label>
                         </li>
                         <li>
-                            <button id="addTask"><i class="fa-solid fa-plus"></i> Add task</button>
+                            <button id="newTask"><i class="fa-solid fa-plus"></i> New task</button>
                         </li>
                     </ul>
-                    <dialog class="modal" id="modal">
-                        <h2></h2>
-                        <form action=""></form>
+                    <dialog class="modal" id="taskModal">
+                        <h2>What to do?</h2>
+                        <form method="dialog">
+                            <label for="task">Task: </label>   
+                            <input class="form-input" type="text" name="task">
+
+                            <label for="description">Description: </label>
+                            <input class="form-input" type="text" name="description">
+
+                            <label for="dueDate">Due Date: </label>
+                            <input class="form-input" type="datetime-local" name="dueDate">
+
+                            <label for="priority">Priority: </label>
+                            <select class="priority-option" name="priority" id="priority">
+                                <option value="low">Low priority</option>
+                                <option value="medium">Medium priority</option>
+                                <option value="high">High priority</option>
+                            </select>
+
+                            <button id="addTask" type="submit">Add task</button>
+                        </form>
                     </dialog>
                 </div>
             </div>

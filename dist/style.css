@@ -48,6 +48,7 @@ main {
 button {
     padding: 8px;
     border-style: none;
+    border-radius: 8px;
 }
 
 .sidebar-button {
@@ -57,7 +58,7 @@ button {
     text-align: left;
 }
 
-button:hover {
+.sidebar-button:hover {
     /* darken background */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }
@@ -88,11 +89,47 @@ li {
     margin: 8px;
 }
 
-#addTask {
-    background-color: var(--secondary-accent-color);
-    font-size: 1rem;
+#newTask {
+    background-color: var(--accent-color);
+    font-size: 0.8rem;
     margin-top: 6px;
+    width: 140px;
+}
+
+#newTask:hover, #addTask:hover {
+    background-color: var(--secondary-accent-color);
+}
+
+.modal {
+    padding: 1em;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0, 0, 0 / 0.4);
+
+    border-radius: 8px;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input, .priority-option {
+    background-color: white;
+    border: solid 2px var(--accent-color);
+    margin-bottom: 20px;
     width: 200px;
+    border-radius: 4px;
+}
+
+.form-input:hover, .priority-option:hover {
+    border: solid 2px var(--secondary-accent-color);
+}
+
+#addTask {
+    background-color: var(--accent-color);
 }
 
 footer {
