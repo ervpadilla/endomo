@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/425da7275c.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
 
-    <title>Endomo</title>
+    <title>endomo</title>
 </head>
 <body>
     <div id="content">
@@ -29,7 +29,7 @@
                 <button class="sidebar-button"><i class="fa-solid fa-calendar-week"></i> Upcoming</button>
                 <h2>Projects</h2>
                 <ul id="projectList">
-                    <button id="addProject"><i class="fa-solid fa-plus"></i> Add Project</button>
+                    <button class="sidebar-button" id="addProject"><i class="fa-solid fa-plus"></i> Add Project</button>
                 </ul>
             </div>
             <div id="main-content">
@@ -47,7 +47,11 @@
                         <li>
                             <button id="addTask"><i class="fa-solid fa-plus"></i> Add task</button>
                         </li>
-                    </ul>    
+                    </ul>
+                    <dialog class="modal" id="modal">
+                        <h2></h2>
+                        <form action=""></form>
+                    </dialog>
                 </div>
             </div>
         </main>

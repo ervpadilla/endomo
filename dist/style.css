@@ -26,7 +26,9 @@ body {
 }
 
 #title {
-    margin-left: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 main {
@@ -38,19 +40,21 @@ main {
 #sidebar {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
     width: 400px;
     padding: 20px 20px 20px 60px;
     height: 87vh;
 }
 
 button {
-    font-size: 1.10rem;
-    background-color: var(--secondary-color);
-    color: #F2F2F2;
     padding: 8px;
-    text-align: left;
     border-style: none;
+}
+
+.sidebar-button {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.10rem;
+    text-align: left;
 }
 
 button:hover {
@@ -63,7 +67,6 @@ button:hover {
 }
 
 #main-content {
-    flex-grow: 1;
     background-color: #F2F2F2;
     color: #000;
     padding: 40px;
@@ -71,6 +74,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     height: 87vh;
+    width: 40vw;
+    border-radius: 8px;
 }
 
 ul {
@@ -87,6 +92,7 @@ li {
     background-color: var(--secondary-accent-color);
     font-size: 1rem;
     margin-top: 6px;
+    width: 200px;
 }
 
 footer {
