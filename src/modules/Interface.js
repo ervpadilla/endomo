@@ -7,3 +7,10 @@ export default class Interface {
         
     }
 }
+
+export const openModal = document.querySelector("#newTask");
+export const modal = document.querySelector("#taskModal");
+
+openModal.addEventListener('click', () => {
+    modal.showModal();
+});
