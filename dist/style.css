@@ -31,7 +31,7 @@ header {
 }
 
 #title {
-    border-left: 5px solid var(--accent-color);
+    border-left: 10px solid var(--accent-color);
     padding-left: 10px;
     font-size: 2rem;
     letter-spacing: 2px;
@@ -50,6 +50,12 @@ main {
     width: 300px;
     padding: 20px 20px 20px 60px;
     height: 87vh;
+}
+
+.sidebar-heading {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-left: 5px solid var(--secondary-accent-color);
 }
 
 button {
@@ -81,8 +87,22 @@ button {
     height: 87vh;
     width: 40vw;
     border-radius: 8px;
-    border: 8px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
     border-right: 24px solid var(--secondary-accent-color);
+    overflow: auto;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ul {
@@ -92,7 +112,11 @@ ul {
 }
 
 li {
-    margin: 8px;
+    background-color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin-bottom: 12px;
 }
 
 #newTask {

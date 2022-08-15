@@ -23,15 +23,22 @@
         </header>
         <main>
             <div id="sidebar">
-                <h2>Tasks</h2>
+                <h2 class="sidebar-heading">Tasks</h2>
                 <button class="sidebar-button"><i class="fa-solid fa-inbox"></i> Inbox</button>
                 <button class="sidebar-button"><i class="fa-solid fa-calendar-day"></i> Today</button>
                 <button class="sidebar-button"><i class="fa-solid fa-calendar-week"></i> Upcoming</button>
+                <h2 class="sidebar-heading">Projects</h2>
+                <ul id="projectList">
+                    <button class="sidebar-button" id="addProject"><i class="fa-solid fa-plus"></i> Add Project</button>
+                </ul>
             </div>
             <div id="main-content">
                 <div id="wrapper">
-                    <h2 class="content-header">Today</h2>
-                    <ul id="todos">
+                    <div class="content-header">
+                        <h2>Today</h2>
+                        <button id="newTask"><i class="fa-solid fa-plus"></i> New task</button>    
+                    </div>
+                    <ul class="todo-list" id="todos">
                         <li>
                             <input type="checkbox" name="todo">
                             <label for="todo">Finish to do app</label>
@@ -39,9 +46,6 @@
                         <li>
                             <input type="checkbox" name="todo">
                             <label for="todo">Refactor code</label>
-                        </li>
-                        <li>
-                            <button id="newTask"><i class="fa-solid fa-plus"></i> New task</button>
                         </li>
                     </ul>
                     <dialog class="modal" id="taskModal">
@@ -54,7 +58,7 @@
                             <input id="description" class="form-input" type="text" name="description" placeholder="Description">
 
                             <label for="dueDate">Due Date: </label>
-                            <input id="dueDate" class="form-input" type="datetime-local" name="dueDate">
+                            <input id="dueDate" class="form-input" type="date" name="dueDate">
 
                             <label for="priority">Priority: </label>
                             <select id="priority" class="priority-option" name="priority">
@@ -62,7 +66,6 @@
                                 <option value="medium">Medium priority</option>
                                 <option value="high">High priority</option>
                             </select>
-
                             <button id="addTask" type="submit">Add task</button>
                         </form>
                     </dialog>
